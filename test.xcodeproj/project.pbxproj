@@ -14,6 +14,13 @@
 		352CAC741F7F4B3C005E1F94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 352CAC721F7F4B3C005E1F94 /* LaunchScreen.storyboard */; };
 		352CAC7F1F7F4B3C005E1F94 /* testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352CAC7E1F7F4B3C005E1F94 /* testTests.swift */; };
 		352CAC8A1F7F4B3C005E1F94 /* testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352CAC891F7F4B3C005E1F94 /* testUITests.swift */; };
+		352CAC9A1F7F4BD9005E1F94 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352CAC6B1F7F4B3C005E1F94 /* ViewController.swift */; };
+		352CAC9B1F7F4BD9005E1F94 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352CAC691F7F4B3C005E1F94 /* AppDelegate.swift */; };
+		352CAC9E1F7F4BD9005E1F94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 352CAC721F7F4B3C005E1F94 /* LaunchScreen.storyboard */; };
+		352CAC9F1F7F4BD9005E1F94 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 352CAC701F7F4B3C005E1F94 /* Assets.xcassets */; };
+		352CACA01F7F4BD9005E1F94 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 352CAC6D1F7F4B3C005E1F94 /* Main.storyboard */; };
+		352CACA81F7F4C0A005E1F94 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 352CACA71F7F4C0A005E1F94 /* CFNetwork.framework */; };
+		352CACAC1F7F4C5C005E1F94 /* calabash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 352CACAB1F7F4C50005E1F94 /* calabash.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +54,10 @@
 		352CAC851F7F4B3C005E1F94 /* testUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = testUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		352CAC891F7F4B3C005E1F94 /* testUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testUITests.swift; sourceTree = "<group>"; };
 		352CAC8B1F7F4B3C005E1F94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		352CACA41F7F4BD9005E1F94 /* test-cal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "test-cal.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		352CACA51F7F4BDA005E1F94 /* test copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "test copy-Info.plist"; path = "/Users/kaoyuting/Desktop/test/test copy-Info.plist"; sourceTree = "<absolute>"; };
+		352CACA71F7F4C0A005E1F94 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		352CACAB1F7F4C50005E1F94 /* calabash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = calabash.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +82,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		352CAC9C1F7F4BD9005E1F94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				352CACAC1F7F4C5C005E1F94 /* calabash.framework in Frameworks */,
+				352CACA81F7F4C0A005E1F94 /* CFNetwork.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,6 +101,8 @@
 				352CAC7D1F7F4B3C005E1F94 /* testTests */,
 				352CAC881F7F4B3C005E1F94 /* testUITests */,
 				352CAC671F7F4B3C005E1F94 /* Products */,
+				352CACA51F7F4BDA005E1F94 /* test copy-Info.plist */,
+				352CACA61F7F4C09005E1F94 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +112,7 @@
 				352CAC661F7F4B3C005E1F94 /* test.app */,
 				352CAC7A1F7F4B3C005E1F94 /* testTests.xctest */,
 				352CAC851F7F4B3C005E1F94 /* testUITests.xctest */,
+				352CACA41F7F4BD9005E1F94 /* test-cal.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,6 +146,15 @@
 				352CAC8B1F7F4B3C005E1F94 /* Info.plist */,
 			);
 			path = testUITests;
+			sourceTree = "<group>";
+		};
+		352CACA61F7F4C09005E1F94 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				352CACAB1F7F4C50005E1F94 /* calabash.framework */,
+				352CACA71F7F4C0A005E1F94 /* CFNetwork.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +213,23 @@
 			productReference = 352CAC851F7F4B3C005E1F94 /* testUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		352CAC981F7F4BD9005E1F94 /* test-cal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 352CACA11F7F4BD9005E1F94 /* Build configuration list for PBXNativeTarget "test-cal" */;
+			buildPhases = (
+				352CAC991F7F4BD9005E1F94 /* Sources */,
+				352CAC9C1F7F4BD9005E1F94 /* Frameworks */,
+				352CAC9D1F7F4BD9005E1F94 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "test-cal";
+			productName = test;
+			productReference = 352CACA41F7F4BD9005E1F94 /* test-cal.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -205,6 +254,9 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 352CAC651F7F4B3C005E1F94;
 					};
+					352CAC981F7F4BD9005E1F94 = {
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 352CAC611F7F4B3C005E1F94 /* Build configuration list for PBXProject "test" */;
@@ -223,6 +275,7 @@
 				352CAC651F7F4B3C005E1F94 /* test */,
 				352CAC791F7F4B3C005E1F94 /* testTests */,
 				352CAC841F7F4B3C005E1F94 /* testUITests */,
+				352CAC981F7F4BD9005E1F94 /* test-cal */,
 			);
 		};
 /* End PBXProject section */
@@ -252,6 +305,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		352CAC9D1F7F4BD9005E1F94 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				352CAC9E1F7F4BD9005E1F94 /* LaunchScreen.storyboard in Resources */,
+				352CAC9F1F7F4BD9005E1F94 /* Assets.xcassets in Resources */,
+				352CACA01F7F4BD9005E1F94 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -277,6 +340,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				352CAC8A1F7F4B3C005E1F94 /* testUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		352CAC991F7F4BD9005E1F94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				352CAC9A1F7F4BD9005E1F94 /* ViewController.swift in Sources */,
+				352CAC9B1F7F4BD9005E1F94 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +499,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HE2Y4LS9U9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pigg.test;
@@ -441,6 +518,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HE2Y4LS9U9;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pigg.test;
@@ -512,6 +594,52 @@
 			};
 			name = Release;
 		};
+		352CACA21F7F4BD9005E1F94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "test copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-force_load",
+					"\"/Users/kaoyuting/Desktop/test/calabash.framework/calabash\"",
+					"-lstdc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pigg.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		352CACA31F7F4BD9005E1F94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "test copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-force_load",
+					"\"/Users/kaoyuting/Desktop/test/calabash.framework/calabash\"",
+					"-lstdc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = pigg.test;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -547,6 +675,15 @@
 			buildConfigurations = (
 				352CAC951F7F4B3C005E1F94 /* Debug */,
 				352CAC961F7F4B3C005E1F94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		352CACA11F7F4BD9005E1F94 /* Build configuration list for PBXNativeTarget "test-cal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				352CACA21F7F4BD9005E1F94 /* Debug */,
+				352CACA31F7F4BD9005E1F94 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
